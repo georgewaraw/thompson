@@ -5,7 +5,7 @@ function init() {
   renderer = new THREE.WebGLRenderer( {
     canvas : canvas } )
   renderer.setSize(
-      window.innerWidth / 5 , window.innerHeight / 5 , false )
+      window.innerWidth / 8 , window.innerHeight / 8 , false )
 
   camera = new THREE.PerspectiveCamera(
       75 , window.innerWidth / window.innerHeight , 1 , 10000 )
@@ -41,7 +41,7 @@ function resize( ) {
   camera.updateProjectionMatrix( )
 
   renderer.setSize(
-      window.innerWidth / 5 , window.innerHeight / 5 , false )
+      window.innerWidth / 8 , window.innerHeight / 8 , false )
 
   composer.reset( )
 
