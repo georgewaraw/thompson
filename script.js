@@ -1,5 +1,5 @@
 
-function init() {
+function init( ) {
 
   canvas = document.getElementById( 'canvas' )
   renderer = new THREE.WebGLRenderer( {
