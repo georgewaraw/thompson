@@ -31,6 +31,7 @@ function init() {
 
   postprocessing( )
 
+  start = false
   animate( )
 
 }
@@ -55,6 +56,8 @@ function keydown( e ) {
     videoSky.play( )
     videoGround.play( )
     videoEye.play( )
+
+    start = true
 
   }
 
@@ -162,7 +165,7 @@ function postprocessing( ) {
 
 function animate( ) {
 
-  mesh.rotation.y = Date.now( ) * .001
+  if ( start ) { mesh.rotation.y = Date.now( ) * .001 }
 
   composer.render( )
 
