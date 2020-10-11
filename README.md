@@ -1,3 +1,1 @@
-https://georgewaraw.github.io/thompson/
-
-https://vimeo.com/280554332
+Press space to start.
